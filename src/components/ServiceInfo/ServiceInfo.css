@@ -1,0 +1,88 @@
+#service {
+        width: 100%;
+        padding: 40px 0px;
+        background: #d4d0d0;
+    }
+.titleText{
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+        
+.single_serviceBox img{
+
+   
+    border-radius: 7px;
+}
+.overlay {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #a09b217a, #2da52ba3);
+    opacity: 0;
+    transition:1s ;
+}
+.single_serviceBox:hover .overlay{
+
+opacity: 1;
+
+}
+.serviceDex {
+
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+
+    background:rgb(0, 0, 0) ;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 50%;
+}
+
+p{
+    font-size: 14px;
+}
+.single_serviceBox:hover .serviceDex{
+
+bottom:25%;
+opacity: 1;
+color: white;
+font-weight: 500;
+
+}
+.price:hover{
+    color: aqua;
+}
+.btn-buy:hover{
+    background-color: aqua;
+}
+@media screen and ( max-width:750px) {
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .servicedesc p{
+        font-size: 14px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single_serviceBox:hover .serviceDex{
+
+        bottom: 22% !important;
+        
+        }
+
+}
